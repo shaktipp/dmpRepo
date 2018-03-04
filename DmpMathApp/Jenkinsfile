@@ -1,26 +1,24 @@
-pipeline{
-    environment {
-      DOCKER = credentials('GitHub_SPP')
-    }
-    agent any
-    /* This builds the actual image; synonymous to
-     * docker build on the command line */
-    def app = docker.build("math-image:${env.BUILD_ID}", "./dmp/docker")	
+pipeline {
+	environment {
+		DOCKER = credentials('GitHub_SPP')
+	}
 	
+	agent any
+
 	tools {
 		maven 'Maven352'
 	}
-	
-	stages{
-		stage('Checkout'){
+
+	stages {
+		stage('Checkout') {
 			steps {
 				git 'https://github.com/shaktipp/dmpRepo.git'
-			}			
-		}		
+			}
+		}
 		stage('Build') {
 			steps {
 				sh 'mvn -f DmpMathApp/pom.xml clean compile'
-			}					
+			}
 		}
 		stage('Test') {
 			steps {
@@ -33,19 +31,18 @@ pipeline{
 			steps {
 				sh 'mvn -f DmpMathApp/pom.xml package'
 			}
-		}		
+		}
 		stage('Sonar Scan') {
 			steps {
 				sh 'mvn -f DmpMathApp/pom.xml sonar:sonar'
 			}
 		}
-		
+
 		stage('Build and Push image') {
-			
+
 			sh 'docker build -f DmpMathApp/dmp/docker/Dockerfile -t math-image .'
-			
+
 		}
-		
-		
+
 	}
 }
