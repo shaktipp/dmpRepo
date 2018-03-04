@@ -40,7 +40,7 @@ pipeline {
 
 		stage('Build Image') {
 			steps {	
-				sh 'DmpMathApp/dmp/docker/Dockerfile'
+				sh './DmpMathApp/dmp/docker/Dockerfile'
 				sh '$pwd'
 				sh 'docker build -t math-image . '
 			}
