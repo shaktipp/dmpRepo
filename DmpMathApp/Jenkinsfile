@@ -44,6 +44,16 @@ pipeline {
 			}
 
 		}
+		stage('Push Image') {
+			steps {
+				script {
+					docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credential') {
+						docker.image(math-image:${BUILD_NUMBER}).push()			
+					}
+				}
+			}
+
+		}
 
 	}
 }
