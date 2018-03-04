@@ -15,10 +15,10 @@
       "envVars": {},
       "memory": "4GB",
       "readyUrl": "/rest/dmp/component.json",
-      "dockerfile": "shaktipp/dmp3:mathapp",
+      "dockerfile": "docker pull shaktipp/math-image",
       "cpu": "2",
       "attributes": {
-        "dockerfile": "shaktipp/dmp3:mathapp",
+        "dockerfile": "docker pull shaktipp/math-image",
         "readyUrl": "/rest/dmp/component.json"
       }
     },
@@ -33,10 +33,10 @@
       "envVars": {},
       "memory": "4GB",
       "readyUrl": "/rest/dmp/component.json",
-      "dockerfile": "shaktipp/dmp3:mathapp",
+      "dockerfile": "docker pull shaktipp/math-image",
       "cpu": "2",
       "attributes": {
-        "dockerfile": "shaktipp/dmp3:mathapp",
+        "dockerfile": "docker pull shaktipp/math-image",
         "readyUrl": "/rest/dmp/component.json"
       }
     }
