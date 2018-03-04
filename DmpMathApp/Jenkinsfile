@@ -48,7 +48,7 @@ pipeline {
 			steps {
 				script {
 					docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credential') {
-						docker.image(math-image:latest).push()			
+						docker.image('math-image:${BUILD_NUMBER}').push()			
 					}
 				}
 			}
