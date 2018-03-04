@@ -1,0 +1,45 @@
+{
+  "kind": "component",
+  "name": "MathApp-component",
+  "description": "MathApp component is used for all Math operation",
+  "version": "1.0.0",
+  "dependencies": [
+    {
+      "kind": "engine",
+      "type": "docker",
+      "env": ["design"],
+      "scale": false,
+      "disableAutoScaling": true,
+      "additionalStorage": 0,
+      "exclude": [],
+      "envVars": {},
+      "memory": "4GB",
+      "readyUrl": "/rest/dmp/component.json",
+      "dockerfile": "shaktipp/dmp3:mathapp",
+      "cpu": "2",
+      "attributes": {
+        "dockerfile": "shaktipp/dmp3:mathapp",
+        "readyUrl": "/rest/dmp/component.json"
+      }
+    },
+    {
+      "kind": "engine",
+      "type": "docker",
+      "env": ["staging", "production"],
+      "scale": false,
+      "disableAutoScaling": true,
+      "additionalStorage": 0,
+      "exclude": [],
+      "envVars": {},
+      "memory": "4GB",
+      "readyUrl": "/rest/dmp/component.json",
+      "dockerfile": "shaktipp/dmp3:mathapp",
+      "cpu": "2",
+      "attributes": {
+        "dockerfile": "shaktipp/dmp3:mathapp",
+        "readyUrl": "/rest/dmp/component.json"
+      }
+    }
+  ],
+  "excludeFromUpgrade": []
+}
