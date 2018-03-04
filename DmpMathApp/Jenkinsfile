@@ -45,12 +45,18 @@ pipeline {
 
 		}
 		stage('Push Image') {
+			/*
 			steps {
 				script {
 					docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credential') {
 						docker.image('math-image:${BUILD_NUMBER}').push()			
 					}
 				}
+			}
+			*/
+			steps {
+				withDockerRegistry([credentialsId: 'docker-hub-credential', url: 'https://registry.hub.docker.com']) {
+				  sh 'docker push math-image:${BUILD_NUMBER}'
 			}
 
 		}
