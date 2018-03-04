@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent { dockerfile true }
     /* This builds the actual image; synonymous to
      * docker build on the command line */
     def app = docker.build("math-image:${env.BUILD_ID}", "./dmp/docker")	
