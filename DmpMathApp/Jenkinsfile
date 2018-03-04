@@ -44,22 +44,18 @@ pipeline {
 			}
 
 		}
-		stage('Push Image') {
-			/*
-			steps {
-				script {
-					docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credential') {
-						docker.image('math-image:${BUILD_NUMBER}').push()			
-					}
-				}
-			}
-			*/
+		stage('Push Image') {			
 			steps {
 				withDockerRegistry([credentialsId: 'docker-hub-credential', url: 'https://registry.hub.docker.com']) {
 				  sh 'docker push shaktipp/math-image:${BUILD_NUMBER}'
-				}
+			        }
 			}
 
+		}
+		stage('Create ZIP') {
+			steps {
+				zip zipFile: 'dmp-archetype.zip', archive: true, dir: 'DmpMathApp/dmp'
+			}
 		}
 
 	}
