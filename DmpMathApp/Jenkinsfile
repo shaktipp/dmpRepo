@@ -40,7 +40,7 @@ pipeline {
 
 		stage('Build Image') {
 			steps {				
-				sh 'docker build -t math-image:${env.BUILD_ID} DmpMathApp/dmp/mydocker'
+				sh 'docker build -t math-image:${BUILD_NUMBER} DmpMathApp/dmp/mydocker'
 			}
 
 		}
