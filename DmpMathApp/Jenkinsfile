@@ -10,7 +10,7 @@ pipeline {
 	}
 
 	stages {
-		/*
+		
 		stage('Checkout') {
 			steps {
 				git 'https://github.com/shaktipp/dmpRepo.git'
@@ -53,7 +53,7 @@ pipeline {
 			}
 
 		}
-		*/
+		
 		stage('Create ZIP') {
 			steps {
 				sh 'cd ./DmpMathApp/dmp/docker/DMP-INF && zip archeType.zip DMP-INF/*'
