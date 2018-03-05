@@ -55,8 +55,7 @@ pipeline {
 		
 		stage('Create ZIP') {
 			steps {
-				sh 'cd ./DmpMathApp/dmp/docker'
-				sh 'zip archeType.zip DMP-INF/'
+				sh 'zip archeType.zip ./DmpMathApp/dmp/docker/DMP-INF/'
 			}
 		}
 		
