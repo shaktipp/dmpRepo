@@ -52,13 +52,13 @@ pipeline {
 			}
 
 		}
-		/*
+		
 		stage('Create ZIP') {
 			steps {
-				zip zipFile: 'dmp-archetype.zip', archive: true, dir: 'DmpMathApp/dmp'
+				zip zipFile: 'dmp-archetype.zip', archive: true, dir: './DmpMathApp/dmp/docker/DMP-INF/'
 			}
 		}
-		*/
+		
 
 	}
 }
