@@ -57,7 +57,8 @@ pipeline {
 		stage('Create ZIP') {
 			steps {
 				//sh 'cd ./DmpMathApp/dmp/docker/DMP-INF && zip archeType.zip DMP-INF/*'
-				sh 'zip archeType.zip ./DmpMathApp/dmp/docker/DMP-INF/*'
+				//sh 'zip archeType.zip ./DmpMathApp/dmp/docker/DMP-INF/*'
+				sh 'jar cvf archeType.zip ./DmpMathApp/dmp/docker/DMP-INF/*'
 			}
 		}
 		
