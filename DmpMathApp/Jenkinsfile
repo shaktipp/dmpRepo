@@ -28,7 +28,11 @@ pipeline {
 				archive 'target/*.jar'
 			}
 		}
-		step([$class: 'CxScanBuilder', comment: 'Checkmark Static Code Analyss', credentialsId: '', excludeFolders: '', excludeOpenSourceFolders: '', exclusionsSetting: 'job', failBuildOnNewResults: false, failBuildOnNewSeverity: 'HIGH', filterPattern: 	'''!**/_cvs/**/*, !**/.svn/**/*,   !**/.hg/**/*,   !**/.git/**/*,  !**/.bzr/**/*, !**/bin/**/*,
+		
+		stage('Package') {
+			steps {
+				sh 'mvn -f DmpMathApp/pom.xml package'
+				step([$class: 'CxScanBuilder', comment: 'Checkmark Static Code Analyss', credentialsId: '', excludeFolders: '', excludeOpenSourceFolders: '', exclusionsSetting: 'job', failBuildOnNewResults: false, failBuildOnNewSeverity: 'HIGH', filterPattern: 	'''!**/_cvs/**/*, !**/.svn/**/*,   !**/.hg/**/*,   !**/.git/**/*,  !**/.bzr/**/*, !**/bin/**/*,
 			!**/obj/**/*,  !**/backup/**/*, !**/.idea/**/*, !**/*.DS_Store, !**/*.ipr,     !**/*.iws,
 			!**/*.bak,     !**/*.tmp,       !**/*.aac,      !**/*.aif,      !**/*.iff,     !**/*.m3u, !**/*.mid, !**/*.mp3,
 			!**/*.mpa,     !**/*.ra,        !**/*.wav,      !**/*.wma,      !**/*.3g2,     !**/*.3gp, !**/*.asf, !**/*.asx,
@@ -40,9 +44,6 @@ pipeline {
 			!**/*.htmls,   !**/*.ihtml,     !**/*.mht,      !**/*.mhtm,     !**/*.mhtml,   !**/*.ssi, !**/*.stm,
 			!**/*.stml,    !**/*.ttml,      !**/*.txn,      !**/*.xhtm,     !**/*.xhtml,   !**/*.class, !**/*.iml, !Checkmarx/Reports/*.*''', fullScanCycle: 10, groupId: '77817e0d-9700-46b5-aa44-16b474ba8416', includeOpenSourceFolders: '', jobStatusOnError: 'FAILURE', osaArchiveIncludePatterns: '*.zip, *.war, *.ear, *.tgz', password: '{AQAAABAAAAAQY8vsvHNzrPNGcSmj4kTwzkcy3DupBli81CPJO+Hv6zU=}', preset: '100000', projectName: 'MathAppUnitTesting', serverUrl: 'https://bnpappwis403.corp.fairisaac.com', sourceEncoding: '1', username: '', vulnerabilityThresholdResult: 'FAILURE'])
 
-		stage('Package') {
-			steps {
-				sh 'mvn -f DmpMathApp/pom.xml package'
 			}
 		}
 		stage('Sonar Scan') {
