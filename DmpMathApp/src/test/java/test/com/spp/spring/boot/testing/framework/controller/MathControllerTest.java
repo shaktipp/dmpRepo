@@ -36,7 +36,7 @@ public class MathControllerTest
     TestRestTemplate restTemplate = new TestRestTemplate(); 
     
     @Test
-    @Ignore
+    //@Ignore
     public void addTest()
     {
     	logger.info("Enter");
@@ -49,7 +49,7 @@ public class MathControllerTest
     }
     
     @Test
-    @Ignore
+    //@Ignore
     public void subTest()
     {
     	logger.info("Enter");
@@ -62,7 +62,7 @@ public class MathControllerTest
     }
     
     @Test
-    @Ignore
+    //@Ignore
     public void mulTest()
     {
     	logger.info("Enter");
@@ -75,7 +75,7 @@ public class MathControllerTest
     }
     
     @Test
-    @Ignore
+    //@Ignore
     public void divTest()
     {
     	logger.info("Enter");
