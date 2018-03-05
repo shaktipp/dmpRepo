@@ -71,7 +71,7 @@ pipeline {
 	
 	post {
 		always {
-		    archive "*.jar"		    
+		    archive "/**/*.jar"		    
 		}
         }//end of post
 		
