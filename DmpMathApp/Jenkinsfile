@@ -61,7 +61,8 @@ pipeline {
 				//sh 'jar cvf archeType.zip ./DmpMathApp/dmp/docker/DMP-INF/*'
 				dir('./DmpMathApp/dmp/docker/'){
 					sh 'zip archeType.zip DMP-INF/*'
-				}//end of dir()	
+					sh 'mv archeType.zip ../../../'
+				}//End of dir()	
 			}
 		}
 		
