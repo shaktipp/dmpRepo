@@ -67,13 +67,6 @@ pipeline {
 		}
 		
 
-	}//End of stages
-	/*
-	post {
-		always {
-		    archive "/**/*.jar"		    
-		}
-        }//end of post
-	*/
+	}//End of stages	
 		
 }
