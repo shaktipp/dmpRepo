@@ -43,7 +43,7 @@ public class MathControllerTest
     	ResponseEntity<Long> response = restTemplate.exchange("/math/add/5/4", HttpMethod.GET,null, Long.class);
     	Long result = response.getBody();
     	logger.info("Result found=" + result);
-    	Assert.assertEquals(new Long(4), result);
+    	Assert.assertEquals(new Long(9), result);
     	logger.info("Exit");
     	
     }
