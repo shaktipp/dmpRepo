@@ -5,16 +5,7 @@
         <!--file>C:/04_Dev_Workspace/SpringIDE_Workspace/S3StorageWithSpring/ReadWriteS3/logs/s3_opearion.log</file-->
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>%d{dd-MMM-yyyy HH:mm:ss,SSS} , %L [%p] [%C{1}] [%M] : %m %n</Pattern>
-        </encoder>
-        <!--
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <fileNamePattern>C:/04_Dev_Workspace/SpringIDE_Workspace/S3StorageWithSpring/ReadWriteS3/logs/archived/s3_operation.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>10MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
-        -->
+        </encoder>        
     </appender>
 
     <appender name="CONSOLE_APPENDER" class="ch.qos.logback.core.ConsoleAppender">
@@ -25,8 +16,7 @@
 
     
 
-    <root level="info">
-        <!--<appender-ref ref="FILE_APPENDER"/>-->
+    <root level="info">       
         <appender-ref ref="CONSOLE_APPENDER"/>
     </root>
 
