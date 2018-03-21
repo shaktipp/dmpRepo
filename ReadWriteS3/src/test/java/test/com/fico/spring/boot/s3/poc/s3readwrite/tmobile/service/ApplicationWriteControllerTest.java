@@ -41,7 +41,7 @@ public class ApplicationWriteControllerTest
     public void writeS3StorageTest()
     {
         //String sampleWriteReqStr = FileUtil.getFileContent( "C:/04_Dev_Workspace/SpringIDE_Workspace/S3StorageWithSpring/ReadWriteS3/src/test/resources/SampleWriteRequest.xml" );
-        String sampleWriteReqStr = FileUtil.getFileContent( "C:/04_Dev_Workspace/SpringIDE_Workspace/S3StorageWithSpring/ReadWriteS3/src/test/resources/SampleWriteTmobileReq.xml" );
+        String sampleWriteReqStr = FileUtil.getFileContent( "src/test/resources/SampleWriteTmobileReq.xml" );
         
         
         HttpHeaders headers = new HttpHeaders();

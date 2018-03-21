@@ -39,7 +39,8 @@ public class ApplicationReadControllerTest
     @Test
     public void readS3StorageTest()
     {
-        String sampleWriteReqStr = FileUtil.getFileContent( "C:/04_Dev_Workspace/SpringIDE_Workspace/S3StorageWithSpring/ReadWriteS3/src/test/resources/SampleReadRequest.xml" );
+        //String sampleWriteReqStr = FileUtil.getFileContent( "C:/04_Dev_Workspace/SpringIDE_Workspace/S3StorageWithSpring/ReadWriteS3/src/test/resources/SampleReadRequest.xml" );
+        String sampleWriteReqStr = FileUtil.getFileContent( "src/test/resources/SampleReadRequest.xml" );
         
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(  MediaType.APPLICATION_XML );
