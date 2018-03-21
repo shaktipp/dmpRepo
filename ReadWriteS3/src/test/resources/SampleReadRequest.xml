@@ -1,0 +1,8 @@
+<applicantRequest>
+	<clientCode>TM</clientCode>
+	<tenantName>IND</tenantName>
+	<buckerPrefix>M</buckerPrefix>
+	<startCount>1</startCount>
+	<endCount>2</endCount>
+	<isDispBucketContent>Y</isDispBucketContent>
+</applicantRequest>

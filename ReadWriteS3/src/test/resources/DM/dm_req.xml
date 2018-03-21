@@ -1,0 +1,444 @@
+<Application ApplicationCrossReferenceId="20180151000002" DecisioningRequestType="DA" DeliveryOptionCode="Tmobile-4092"
+             ProcessingRequestType="DA" ResubmissionFlag="false" SWDecision="false"
+             StrategySelectionRandomNumber="78770392" Timestamp="2018-01-15T09:23:16.000+0000">
+    <CreditRequest DMFunction="CCC" ProductCategory="Telcom" ProductCode="PRD1"/>
+    <CreditApplication>
+        <type>Consumer</type>
+        <CRID>20180151000002</CRID>
+        <PG_APP>N</PG_APP>
+        <PID_ERROR>N</PID_ERROR>
+        <receivedDate>2018-01-15</receivedDate>
+        <PersonalApplicant>
+            <type>PRIMARY</type>
+            <isExistingCustomer>false</isExistingCustomer>
+            <ExternalDataSource>
+                <externalDataSourceType>TransUnion US Consumer</externalDataSourceType>
+                <consumer>
+                    <DataSource>
+                        <applicantXrefNumber>0</applicantXrefNumber>
+                    </DataSource>
+                    <LNRiskViewDataSource>
+                        <Response>
+                            <Output name="ReadableResponse">
+                                <RiskViewResponseEx>
+                                    <Result>
+                                        <Models>
+                                            <Model>
+                                                <LNScores/>
+                                            </Model>
+                                        </Models>
+                                        <LNAttributes/>
+                                    </Result>
+                                </RiskViewResponseEx>
+                            </Output>
+                        </Response>
+                    </LNRiskViewDataSource>
+                    <XPNPIDDataSource>
+                        <Response>
+                            <Output name="ReadableResponse">
+                                <PIDExperian>
+                                    <FraudSolutions>
+                                        <PIDProducts>
+                                            <PIDPreciseIDServer>
+                                                <PIDXMLVersion>06.00</PIDXMLVersion>
+                                                <SessionID>JKWEGCVZ9VT27IWJAG37VROC.pidd1v-1801150322080210022908978
+                                                </SessionID>
+                                                <PIDHeader>
+                                                    <ReportDate>01152018</ReportDate>
+                                                    <ReportTime>032209</ReportTime>
+                                                    <ProductOption>06</ProductOption>
+                                                    <Subcode>2466020</Subcode>
+                                                    <ReferenceNumber>20180151000002</ReferenceNumber>
+                                                </PIDHeader>
+                                                <PIDMessages>
+                                                    <PIDMessage>
+                                                        <Number>57</Number>
+                                                        <Text>0150</Text>
+                                                        <AddrMismatch>N</AddrMismatch>
+                                                    </PIDMessage>
+                                                </PIDMessages>
+                                                <PIDSummary>
+                                                    <TransactionID>24864351</TransactionID>
+                                                    <InitialDecision>ACC</InitialDecision>
+                                                    <FinalDecision>ACC</FinalDecision>
+                                                    <PIDScores>
+                                                        <PreciseIDScore>604</PreciseIDScore>
+                                                        <PreciseIDScorecard>Tmobile frd v3</PreciseIDScorecard>
+                                                        <ValidationScore>000773</ValidationScore>
+                                                        <ValidationScorecard>AC OPEN VAL V2</ValidationScorecard>
+                                                        <VerificationScore>000763</VerificationScore>
+                                                        <VerificationScorecard>AC OPEN ID THEFT V2
+                                                        </VerificationScorecard>
+                                                        <FPDScore>000306</FPDScore>
+                                                        <FPDScorecard>AC OPEN FPD V2</FPDScorecard>
+                                                        <ComplianceDescription>No Compliance Code
+                                                        </ComplianceDescription>
+                                                        <MostLikelyFraudType code="FPD"/>
+                                                        <Reasons>
+                                                            <Reason code="TM01"/>
+                                                            <Reason code="T405"/>
+                                                            <Reason code="T405"/>
+                                                            <Reason code="T405"/>
+                                                            <Reason code="    "/>
+                                                        </Reasons>
+                                                    </PIDScores>
+                                                </PIDSummary>
+                                                <PIDFCRADetail>
+                                                    <PIDFraudShield>
+                                                        <Indicator code="07" value="N"/>
+                                                        <Indicator code="08" value="N"/>
+                                                        <Indicator code="09" value="N"/>
+                                                        <Indicator code="19" value="N"/>
+                                                        <Indicator code="20" value="N"/>
+                                                        <Indicator code="22" value="N"/>
+                                                        <Indicator code="27" value="N"/>
+                                                    </PIDFraudShield>
+                                                    <FCRARules>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                        <FCRARule code="    "/>
+                                                    </FCRARules>
+                                                    <PIDAdverseActions>
+                                                        <PIDAdverseAction code=" "/>
+                                                        <PIDAdverseAction code=" "/>
+                                                        <PIDAdverseAction code=" "/>
+                                                        <PIDAdverseAction code=" "/>
+                                                    </PIDAdverseActions>
+                                                </PIDFCRADetail>
+                                                <PIDGLBDetail>
+                                                    <PIDFraudShield>
+                                                        <Indicator code="01" value="N"/>
+                                                        <Indicator code="02" value="N"/>
+                                                        <Indicator code="03" value="N"/>
+                                                        <Indicator code="04" value="N"/>
+                                                        <Indicator code="05" value="N"/>
+                                                        <Indicator code="06" value="N"/>
+                                                        <Indicator code="10" value="N"/>
+                                                        <Indicator code="11" value="N"/>
+                                                        <Indicator code="13" value="N"/>
+                                                        <Indicator code="14" value="N"/>
+                                                        <Indicator code="15" value="N"/>
+                                                        <Indicator code="16" value="N"/>
+                                                        <Indicator code="17" value="N"/>
+                                                        <Indicator code="18" value="N"/>
+                                                        <Indicator code="21" value="Y"/>
+                                                        <Indicator code="25" value="N"/>
+                                                        <Indicator code="26" value="N"/>
+                                                    </PIDFraudShield>
+                                                    <GLBRules>
+                                                        <GLBRule code="3001"/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                        <GLBRule code="    "/>
+                                                    </GLBRules>
+                                                </PIDGLBDetail>
+                                                <PreciseMatch>
+                                                    <Version>02.00</Version>
+                                                    <ResponseStatusCode code="00"/>
+                                                    <PreciseMatchTransactionID>3f748abe-ca53-46aa-9
+                                                    </PreciseMatchTransactionID>
+                                                    <PreciseMatchScore>294</PreciseMatchScore>
+                                                    <PreciseMatchDecision code=" "/>
+                                                    <Addresses>
+                                                        <PIDAddress>
+                                                            <PIDSummary>
+                                                                <VerificationResult code="ZZ"/>
+                                                                <Type code="N "/>
+                                                                <UnitMismatchResult code="  "/>
+                                                                <HighRiskResult code="N "/>
+                                                                <Counts>
+                                                                    <StandardizedAddressReturnCount>00
+                                                                    </StandardizedAddressReturnCount>
+                                                                    <ResidentialAddressMatchCount>0000
+                                                                    </ResidentialAddressMatchCount>
+                                                                    <ResidentialAddressReturnCount>00
+                                                                    </ResidentialAddressReturnCount>
+                                                                    <HighRiskAddressReturnCount>00
+                                                                    </HighRiskAddressReturnCount>
+                                                                    <BusinessAddressMatchCount>0000
+                                                                    </BusinessAddressMatchCount>
+                                                                    <BusinessAddressReturnCount>00
+                                                                    </BusinessAddressReturnCount>
+                                                                </Counts>
+                                                            </PIDSummary>
+                                                            <Detail>
+                                                                <HighRiskAddressDescription>
+                                                                    <HighRiskDescription>No high risk business at
+                                                                        address/phone
+                                                                    </HighRiskDescription>
+                                                                </HighRiskAddressDescription>
+                                                            </Detail>
+                                                        </PIDAddress>
+                                                    </Addresses>
+                                                    <Phones>
+                                                        <PIDPhones>
+                                                            <PIDSummary>
+                                                                <VerificationResult code="NX"/>
+                                                                <Classification code="X"/>
+                                                                <HighRiskResult code="N"/>
+                                                                <Counts>
+                                                                    <ResidentialPhoneMatchCount>0000
+                                                                    </ResidentialPhoneMatchCount>
+                                                                    <ResidentialPhoneReturnCount>00
+                                                                    </ResidentialPhoneReturnCount>
+                                                                    <HighRiskPhoneReturnCount>00
+                                                                    </HighRiskPhoneReturnCount>
+                                                                    <BusinessPhoneMatchCount>0000
+                                                                    </BusinessPhoneMatchCount>
+                                                                    <BusinessPhoneReturnCount>00
+                                                                    </BusinessPhoneReturnCount>
+                                                                </Counts>
+                                                            </PIDSummary>
+                                                            <Detail>
+                                                                <HighRiskPhoneDescription>
+                                                                    <HighRiskDescription>No high risk business at
+                                                                        address/phone
+                                                                    </HighRiskDescription>
+                                                                </HighRiskPhoneDescription>
+                                                            </Detail>
+                                                        </PIDPhones>
+                                                    </Phones>
+                                                    <ConsumerID>
+                                                        <PIDSummary>
+                                                            <VerificationResult code="V "/>
+                                                            <DeceasedResult code="N"/>
+                                                            <FormatResult code="V"/>
+                                                            <IssueResult code="C"/>
+                                                            <Counts>
+                                                                <ConsumerIDReturnCount>00</ConsumerIDReturnCount>
+                                                            </Counts>
+                                                        </PIDSummary>
+                                                    </ConsumerID>
+                                                    <DateOfBirth>
+                                                        <PIDSummary>
+                                                            <MatchResult code="5"/>
+                                                        </PIDSummary>
+                                                    </DateOfBirth>
+                                                    <PIDDriverLicense>
+                                                        <PIDSummary>
+                                                            <VerificationResult code="M"/>
+                                                            <FormatValidation code=" "/>
+                                                        </PIDSummary>
+                                                    </PIDDriverLicense>
+                                                    <ChangeOfAddresses>
+                                                        <ChangeOfAddress>
+                                                            <PIDSummary>
+                                                                <VerificationResult code="N "/>
+                                                                <Counts>
+                                                                    <ChangeOfAddressReturnCount>00
+                                                                    </ChangeOfAddressReturnCount>
+                                                                </Counts>
+                                                            </PIDSummary>
+                                                        </ChangeOfAddress>
+                                                    </ChangeOfAddresses>
+                                                    <OFAC>
+                                                        <PIDSummary>
+                                                            <VerificationResult code="1 "/>
+                                                            <Counts>
+                                                                <OFACReturnCount>00</OFACReturnCount>
+                                                            </Counts>
+                                                        </PIDSummary>
+                                                    </OFAC>
+                                                    <PreviousAddresses>
+                                                        <PIDPreviousAddress>
+                                                            <PIDSummary>
+                                                                <Counts>
+                                                                    <PreviousAddressReturnCount>00
+                                                                    </PreviousAddressReturnCount>
+                                                                </Counts>
+                                                            </PIDSummary>
+                                                        </PIDPreviousAddress>
+                                                    </PreviousAddresses>
+                                                    <SSNFinder>
+                                                        <PIDSummary>
+                                                            <Counts>
+                                                                <SSNFinderReturnCount>00</SSNFinderReturnCount>
+                                                            </Counts>
+                                                        </PIDSummary>
+                                                    </SSNFinder>
+                                                </PreciseMatch>
+                                                <CCStrings>
+                                                    <CCString>220</CCString>
+                                                </CCStrings>
+                                            </PIDPreciseIDServer>
+                                        </PIDProducts>
+                                    </FraudSolutions>
+                                </PIDExperian>
+                            </Output>
+                        </Response>
+                    </XPNPIDDataSource>
+                </consumer>
+            </ExternalDataSource>
+            <SCORES>
+                <PCR4>925</PCR4>
+                <PCR6>0</PCR6>
+                <LNScore>-999</LNScore>
+                <BureauScore>761</BureauScore>
+                <BureauName>TU</BureauName>
+                <PreciseIDScore>-999</PreciseIDScore>
+                <SCORE_MODEL>
+                    <SCORE_NAME>PCRv4</SCORE_NAME>
+                    <SCORE_VALUE>925.0</SCORE_VALUE>
+                    <BUREAU_NAME>TU</BUREAU_NAME>
+                    <REPORT_DATE>2018-01-15</REPORT_DATE>
+                    <REASON_CODE_1>6</REASON_CODE_1>
+                    <REASON_CODE_2>1</REASON_CODE_2>
+                    <REASON_CODE_3>5</REASON_CODE_3>
+                    <REASON_CODE_4>7</REASON_CODE_4>
+                    <REASON_CODE_5>4</REASON_CODE_5>
+                    <IS_SCORE_MODEL_DECISION>false</IS_SCORE_MODEL_DECISION>
+                </SCORE_MODEL>
+            </SCORES>
+            <BUREAU_ATTRIBUTES ALE001="0" ALE002="0" ALE005="0" ALE007="0" ALE022="0" ALE023="0" ALE026="0" ALE071="0"
+                               ALE074="0" ALE075="0" ALE076="0" ALE077="0" ALE078="0" ALE080="0" ALE081="0" ALE084="0"
+                               ALE403="0" ALE501="0" ALE502="0" ALE503="0" ALE601="0" ALE720="9999" ALE724="9999"
+                               ALE740="9999" ALE801="0" ALE804="0" ALE901="0" ALE903="0" ALE904="0" ALE905="0"
+                               ALE906="0" ALE908="0" ALL001="5" ALL002="5" ALL003="3" ALL005="5" ALL006="3" ALL007="3"
+                               ALL010="5" ALL021="0" ALL022="0" ALL023="1" ALL024="5" ALL026="3" ALL051="0" ALL052="0"
+                               ALL062="5" ALL064="0" ALL067="0" ALL071="5" ALL074="0" ALL075="0" ALL076="0" ALL077="0"
+                               ALL078="0" ALL080="0" ALL081="0" ALL082="0" ALL084="0" ALL085="0" ALL086="0" ALL090="0"
+                               ALL091="0" ALL092="0" ALL101="5" ALL102="5" ALL103="0" ALL104="0" ALL105="0" ALL106="0"
+                               ALL107="0" ALL108="0" ALL109="0" ALL110="0" ALL111="0" ALL112="0" ALL113="0" ALL114="0"
+                               ALL115="0" ALL116="0" ALL117="0" ALL118="0" ALL119="0" ALL122="0" ALL124="0" ALL125="0"
+                               ALL126="5" ALL127="0" ALL128="0" ALL129="0" ALL130="0" ALL131="0" ALL134="0" ALL136="0"
+                               ALL141="0" ALL142="0" ALL143="0" ALL144="0" ALL145="0" ALL146="0" ALL151="0" ALL152="0"
+                               ALL153="0" ALL155="0" ALL156="0" ALL201="287461" ALL202="95820" ALL207="0" ALL208="2212"
+                               ALL301="310900" ALL403="92" ALL501="1" ALL502="1" ALL503="1" ALL504="1" ALL505="0"
+                               ALL524="0" ALL601="1" ALL602="0" ALL701="107" ALL702="21" ALL703="45" ALL720="9999"
+                               ALL724="9999" ALL740="9999" ALL760="9999" ALL780="9999" ALL790="9999" ALL801="2"
+                               ALL803="1" ALL804="1" ALL805="0" ALL806="0" ALL807="0" ALL901="100" ALL903="0" ALL904="0"
+                               ALL905="0" ALL906="0" ALL907="60" AUT001="0" AUT071="0" AUT720="9999" BAC001="2"
+                               BAC002="2" BAC005="2" BAC007="1" BAC022="0" BAC023="0" BAC026="1" BAC028="1" BAC031="1"
+                               BAC035="0" BAC037="0" BAC042="0" BAC044="0" BAC045="0" BAC071="2" BAC074="0" BAC075="0"
+                               BAC076="0" BAC077="0" BAC078="0" BAC080="0" BAC081="0" BAC084="0" BAC302="10000"
+                               BAC303="10000" BAC401="9561" BAC403="4" BAC501="1" BAC502="1" BAC503="1" BAC503d0="0"
+                               BAC503d1="1" BAC601="1" BAC801="0" BAC804="0" BAC901="100" BAC903="0" BAC904="0"
+                               BAC905="0" BAC906="0" BAC908="33" BNK001="0" BNK026="0" BRR026="2" CAP026="0" CAP801="0"
+                               CRU001="2" FIL001="1" FIL022="0" FIL023="1" FIN001="2" FIN026="0" FIN601="0" FIN801="0"
+                               GBL007="0" HEQ001="0" ILN001="1" ILN002="1" ILN005="1" ILN006="0" ILN007="0" ILN022="0"
+                               ILN023="1" ILN026="0" ILN064="0" ILN067="0" ILN071="1" ILN074="0" ILN075="0" ILN076="0"
+                               ILN077="0" ILN078="0" ILN080="0" ILN081="0" ILN084="0" ILN085="0" ILN086="0" ILN101="1"
+                               ILN102="1" ILN103="0" ILN104="0" ILN105="0" ILN106="0" ILN107="0" ILN108="0" ILN109="0"
+                               ILN110="0" ILN111="0" ILN112="0" ILN113="0" ILN114="0" ILN115="0" ILN116="0" ILN117="0"
+                               ILN118="0" ILN119="0" ILN122="0" ILN124="0" ILN125="0" ILN126="1" ILN127="0" ILN128="0"
+                               ILN129="0" ILN130="0" ILN201="0" ILN301="0" ILN302="0" ILN403="0" ILN501="1" ILN502="1"
+                               ILN503="1" ILN503d0="0" ILN503d1="1" ILN503d3="0" ILN504="1" ILN601="0" ILN701="21"
+                               ILN702="21" ILN703="21" ILN720="9999" ILN724="9999" ILN740="9999" ILN801="0" ILN804="0"
+                               ILN901="100" ILN903="0" ILN904="0" ILN905="0" ILN906="0" ILN908="0" ILN914="20"
+                               IRC004="0" IRC005="0" LFI801="0" REF001="1" REP001="1" REP002="1" REP005="1" REP026="1"
+                               REP071="1" REP074="0" REP075="0" REP076="0" REP077="0" REP078="0" REP080="0" REP081="0"
+                               REP084="0" REP302="295000" REP501="1" REP501d0="0" REP503="1" REP601="1" REP601d0="0"
+                               REP901="100" REP903="0" REP904="0" REP905="0" REP906="0" REP908="33" REV001="3"
+                               REV002="3" REV005="3" REV006="2" REV007="2" REV022="0" REV023="0" REV024="3" REV026="2"
+                               REV028="2" REV038="2" REV044="0" REV064="0" REV067="0" REV071="3" REV074="0" REV075="0"
+                               REV076="0" REV077="0" REV078="0" REV080="0" REV081="0" REV084="0" REV085="0" REV086="0"
+                               REV101="3" REV102="3" REV103="0" REV104="0" REV105="0" REV106="0" REV107="0" REV108="0"
+                               REV109="0" REV110="0" REV111="0" REV112="0" REV113="0" REV114="0" REV115="0" REV116="0"
+                               REV117="0" REV118="0" REV119="0" REV122="0" REV124="0" REV125="0" REV126="3" REV127="0"
+                               REV128="0" REV129="0" REV130="0" REV201="439" REV202="219" REV301="15900" REV302="7950"
+                               REV401="15461" REV403="2" REV404="0" REV501="1" REV501d0="0" REV501d3="0" REV502="1"
+                               REV503="1" REV504="1" REV524="0" REV601="1" REV601d1="1" REV701="107" REV702="26"
+                               REV703="57" REV720="9999" REV724="9999" REV740="9999" REV901="100" REV903="0" REV904="0"
+                               REV905="0" REV906="0" REV908="66" RTI026="0" RTL001="1" RTL002="1" RTL005="1" RTL026="1"
+                               RTL071="1" RTL074="0" RTL075="0" RTL076="0" RTL077="0" RTL078="0" RTL080="0" RTL081="0"
+                               RTL084="0" RTL501="1" RTL502="1" RTL503="1" RTL901="100" RTL903="0" RTL904="0" RTL905="0"
+                               RTL906="0" RTL908="33" RTR001="1" RTR002="1" RTR005="1" RTR007="1" RTR022="0" RTR023="0"
+                               RTR026="1" RTR028="1" RTR031="0" RTR035="0" RTR044="0" RTR071="1" RTR074="0" RTR075="0"
+                               RTR076="0" RTR077="0" RTR078="0" RTR080="0" RTR081="0" RTR084="0" RTR303="5900"
+                               RTR401="5900" RTR403="0" RTR501="1" RTR601="1" RTR901="100" RTR903="0" RTR904="0"
+                               RTR905="0" RTR906="0" RTR908="33"/>
+            <PersonalApplicantOutput>
+                <isScorable>true</isScorable>
+                <isCMFAvailable>false</isCMFAvailable>
+                <FRAUD_ALERTS>
+                    <OTHERS ScoreFlagACTIVEDUTY="N" ScoreFlagCS="N" ScoreFlagDEAD="N" ScoreFlagGamingVelocity="N"
+                            ScoreFlagPreciseID="N" ScoreFlagSSNMIS="N" ScoreFlagSSNNI="N" ScoreFlagSSNSUS2="N"
+                            ScoreFlagSSNSUS4="N" ScoreFlagVS="N"/>
+                </FRAUD_ALERTS>
+                <PID_call>true</PID_call>
+                <IDA_call>false</IDA_call>
+                <NegAttributes NEG001="0" NEG002="0" NEG003="0" NEG004="0" NEG005="0" NEG006="0" NEG007="0" NEG008="0"
+                               NEG009="0" NEG010="0" NEG011="999" NEG012="0" NEG013="0" NEG014="0" NEG015="0" NEG016="0"
+                               NEG017="0" NEG018="0" NEG019="999" NEG020="0" NEG021="0" NEG022="99999" NEG023="0"
+                               NEG024="0" NEG025="0" NEG026="0"/>
+            </PersonalApplicantOutput>
+            <OFACFlag>N</OFACFlag>
+            <FlagHotName>N</FlagHotName>
+            <FlagHotSSN>N</FlagHotSSN>
+            <FlagFICOMismatch>N</FlagFICOMismatch>
+        </PersonalApplicant>
+
+        <IS_SSN_ALL_ONES>N</IS_SSN_ALL_ONES>
+        <T_CHANNEL_CODE>220</T_CHANNEL_CODE>
+        <T_DEALER_CODE>1610027</T_DEALER_CODE>
+        <channel>220</channel>
+        <isPuertoRico>N</isPuertoRico>
+        <requestedNumberOfLines>2</requestedNumberOfLines>
+        <AppType>1</AppType>
+        <MSISDN>5554564593</MSISDN>
+        <WHITE_LIST>
+            <MATCH_COUNT>0</MATCH_COUNT>
+            <PCRV4>0</PCRV4>
+            <VANTAGE_SCORE_V3>0</VANTAGE_SCORE_V3>
+            <SCORE1>0</SCORE1>
+            <SCORE2>0</SCORE2>
+            <SCORE3>0</SCORE3>
+            <SCORE4>0</SCORE4>
+            <SCORE5>0</SCORE5>
+        </WHITE_LIST>
+        <CreditApplicationOutput>
+            <GamingVelocityCounter>0</GamingVelocityCounter>
+            <DupVelocityCounter>0</DupVelocityCounter>
+            <GamingVelocity>false</GamingVelocity>
+            <DupVelocity>false</DupVelocity>
+        </CreditApplicationOutput>
+        <TM_BYPASS_FLAG>N</TM_BYPASS_FLAG>
+        <EXP_PID_BYPASS_FLAG>N</EXP_PID_BYPASS_FLAG>
+        <TU_CONSUMER_CRA_BYPASS_FLAG>N</TU_CONSUMER_CRA_BYPASS_FLAG>
+        <EFX_CONSUMER_CRA_BYPASS_FLAG>N</EFX_CONSUMER_CRA_BYPASS_FLAG>
+        <LN_RISKVIEW_FULL_BYPASS_FLAG>N</LN_RISKVIEW_FULL_BYPASS_FLAG>
+        <CLARITYCLEAR_BYPASS_FLAG>N</CLARITYCLEAR_BYPASS_FLAG>
+        <LN_RISKVIEW_THIN_BYPASS_FLAG>N</LN_RISKVIEW_THIN_BYPASS_FLAG>
+        <NEUSTAR_BYPASS_FLAG>N</NEUSTAR_BYPASS_FLAG>
+        <LN_KBA_BYPASS_FLAG>N</LN_KBA_BYPASS_FLAG>
+        <XPN_KBA_BYPASS_FLAG>N</XPN_KBA_BYPASS_FLAG>
+        <LN_BIID_BYPASS_FLAG>N</LN_BIID_BYPASS_FLAG>
+        <XPN_BUSINESS_CRA_BYPASS_FLAG>N</XPN_BUSINESS_CRA_BYPASS_FLAG>
+        <EFX_BUSINESS_CRA_BYPASS_FLAG>N</EFX_BUSINESS_CRA_BYPASS_FLAG>
+        <IDA_BYPASS_FLAG>N</IDA_BYPASS_FLAG>
+        <DuplicateApplications/>
+    </CreditApplication>
+</Application>

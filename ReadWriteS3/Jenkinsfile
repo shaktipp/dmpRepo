@@ -1,0 +1,85 @@
+pipeline {
+	environment {
+		DOCKER = credentials('GitHub_SPP')
+	}
+
+	agent any
+
+	tools {
+		maven 'Maven352'
+	}
+
+	stages {
+		
+		stage('Checkout') {
+			steps {
+				git 'https://github.com/shaktipp/dmpRepo.git'
+			}
+		}
+		stage('Build') {
+			steps {
+				sh 'mvn -f ReadWriteS3/pom.xml clean compile'
+			}
+		}
+		stage('Test') {
+			steps {
+				sh 'mvn -f ReadWriteS3/pom.xml test'
+				junit '**/target/surefire-reports/TEST-*.xml'
+				archive 'target/*.jar'
+			}
+		}
+		
+		stage('Package and Checkmarx') {
+			steps {
+				sh 'mvn -f ReadWriteS3/pom.xml package'
+				step([$class: 'CxScanBuilder', comment: 'Checkmark Static Code Analyss', credentialsId: '', excludeFolders: '', excludeOpenSourceFolders: '', exclusionsSetting: 'job', failBuildOnNewResults: false, failBuildOnNewSeverity: 'HIGH', filterPattern: 	'''!**/_cvs/**/*, !**/.svn/**/*,   !**/.hg/**/*,   !**/.git/**/*,  !**/.bzr/**/*, !**/bin/**/*,
+				!**/obj/**/*,  !**/backup/**/*, !**/.idea/**/*, !**/*.DS_Store, !**/*.ipr,     !**/*.iws,
+				!**/*.bak,     !**/*.tmp,       !**/*.aac,      !**/*.aif,      !**/*.iff,     !**/*.m3u, !**/*.mid, !**/*.mp3,
+				!**/*.mpa,     !**/*.ra,        !**/*.wav,      !**/*.wma,      !**/*.3g2,     !**/*.3gp, !**/*.asf, !**/*.asx,
+				!**/*.avi,     !**/*.flv,       !**/*.mov,      !**/*.mp4,      !**/*.mpg,     !**/*.rm,  !**/*.swf, !**/*.vob,
+				!**/*.wmv,     !**/*.bmp,       !**/*.gif,      !**/*.jpg,      !**/*.png,     !**/*.psd, !**/*.tif, !**/*.swf,
+				 !**/*.rar,      !**/*.exe,      !**/*.dll,     !**/*.pdb, !**/*.7z,  !**/*.gz,
+				!**/*.tar.gz,  !**/*.tar,       !**/*.gz,       !**/*.ahtm,     !**/*.ahtml,   !**/*.fhtml, !**/*.hdm,
+				!**/*.hdml,    !**/*.hsql,      !**/*.ht,       !**/*.hta,      !**/*.htc,     !**/*.htd, 
+				!**/*.htmls,   !**/*.ihtml,     !**/*.mht,      !**/*.mhtm,     !**/*.mhtml,   !**/*.ssi, !**/*.stm,
+				!**/*.stml,    !**/*.ttml,      !**/*.txn,      !**/*.xhtm,     !**/*.xhtml,   !**/*.class, !**/*.iml, !Checkmarx/Reports/*.*''', fullScanCycle: 10, groupId: '77817e0d-9700-46b5-aa44-16b474ba8416', includeOpenSourceFolders: '', jobStatusOnError: 'FAILURE', osaArchiveIncludePatterns: '*.zip, *.war, *.ear, *.tgz', password: '{AQAAABAAAAAQY8vsvHNzrPNGcSmj4kTwzkcy3DupBli81CPJO+Hv6zU=}', preset: '100000', projectName: 'MathAppUnitTesting', serverUrl: 'https://bnpappwis403.corp.fairisaac.com', sourceEncoding: '1', username: '', vulnerabilityThresholdResult: 'FAILURE'])
+
+			}
+		}
+		stage('Sonar Scan') {
+			steps {
+				sh 'mvn -f ReadWriteS3/pom.xml sonar:sonar'
+			}
+		}
+
+		stage('Build Image') {
+			steps {				
+				sh 'docker build -t shaktipp/ReadWriteS3-image:${BUILD_NUMBER} ReadWriteS3/dmp/docker'
+			}
+
+		}
+		stage('Push Image') {			
+			steps {
+				withDockerRegistry([credentialsId: 'docker-hub-credential', url: 'https://registry.hub.docker.com']) {
+				  sh 'docker push shaktipp/math-image:${BUILD_NUMBER}'
+			        }
+			}
+
+		}
+		
+		stage('Create ZIP') {
+			steps {
+				//sh 'cd ./ReadWriteS3/dmp/docker/DMP-INF && zip archeType.zip DMP-INF/*'
+				//sh 'zip archeType.zip ./ReadWriteS3/dmp/docker/DMP-INF/*'
+				//sh 'jar cvf archeType.zip ./ReadWriteS3/dmp/docker/DMP-INF/*'
+				dir('./ReadWriteS3/dmp/docker/'){
+					sh 'zip archeType.zip DMP-INF/*'
+					sh 'mv archeType.zip ../../../'
+				}//End of dir()	
+			}
+		}
+		
+
+	}//End of stages	
+		
+}

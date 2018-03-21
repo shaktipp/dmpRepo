@@ -1,0 +1,46 @@
+<!--experian Request-->
+<OMApplication>
+    <inquiryParameter>
+        <id>1</id>
+        <subscriberNumber>test</subscriberNumber>
+        <fraudRequestFlag>Y</fraudRequestFlag>
+        <scoringModel1>94</scoringModel1>
+        <scoringModel2>04</scoringModel2>
+        <cra>TU</cra>
+        <scorePercentileRankDataRequestFlag>false</scorePercentileRankDataRequestFlag>
+    </inquiryParameter>
+    <creditApplication>
+        <type>PRIMARY</type>
+        <personalApplicants>
+            <personalApplicant>
+                <type>PRIMARY</type>
+                <currentResidence>
+                    <address>
+                        <city>Palm Springs</city>
+                        <state>CA</state>
+                        <postalCode>92262</postalCode>
+                        <line1>861 Desert Tr</line1>
+                        <country>US</country>
+                    </address>
+                </currentResidence>
+                <person>
+                    <birthDate>1966-02-17</birthDate>
+                    <name>
+                        <first>Joshua</first>
+                        <last>Tree</last>
+                    </name>
+                    <identity>
+                        <identificationType>US Passport</identificationType>
+                        <identificationNumber>E420</identificationNumber>
+                    </identity>
+                    <emailAddress>ws3_test@gmail.com</emailAddress>
+                    <phoneNumber>5554564593</phoneNumber>
+                    <ssn>666434321</ssn>
+                    <portInNumber>5554564593</portInNumber>
+                </person>
+            </personalApplicant>
+        </personalApplicants>
+        <crid>20180151000002</crid>
+        <channelOverride>220</channelOverride>
+    </creditApplication>
+</OMApplication>

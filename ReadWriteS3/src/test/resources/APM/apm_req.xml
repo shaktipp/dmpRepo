@@ -1,0 +1,25 @@
+<SubmitApplication>
+    <ApplicationData_WS>
+        <RequestType>NEW</RequestType>
+        <ValidateField>1</ValidateField>
+
+        <CreditSalesChannel>210</CreditSalesChannel>
+        <NumberOfLines>1</NumberOfLines>
+        <Person>
+            <MobileNumber>1234567890</MobileNumber>
+            <EmailAddress>test@fico.com</EmailAddress>
+            <FirstName>testtetetetstststst</FirstName>
+            <LastName>testtestetstetste</LastName>
+            <PersonalId>662339321</PersonalId>
+            <BirthDate>1992-03-01</BirthDate>
+            <AddressLine1>2709 TSCFMVWD AVE</AddressLine1>
+            <City>DAVENPORT</City>
+            <StateCode>IA</StateCode>
+            <PostalCode>52803</PostalCode>
+            <IdentificationTypeCode>PASS</IdentificationTypeCode>
+            <IdentificationNumber>73773492739</IdentificationNumber>
+            <IdentificationPlaceIssued>KY</IdentificationPlaceIssued>
+            <WorkPhone>3847564732</WorkPhone>
+        </Person>
+    </ApplicationData_WS>
+</SubmitApplication>

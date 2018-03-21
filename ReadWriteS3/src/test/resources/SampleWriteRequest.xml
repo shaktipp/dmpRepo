@@ -1,0 +1,19 @@
+<applicantRequest>
+    <clientCode>TM</clientCode>
+    <tenantName>IND</tenantName>
+    <buckerPrefix>M</buckerPrefix>
+    <startCount>1</startCount>
+    <endCount>10</endCount>
+    <applicantName>Shakti Panda</applicantName>
+    <birthDate>21/07/1990</birthDate>
+    <maritalStatus>Married</maritalStatus>
+    <identificationCode>Passport</identificationCode>
+    <address>Kodihaki,Bangalore</address>
+    <submittedDate>24/02/2018</submittedDate>
+    <apm_req><apm>Sample APM Request</apm></apm_req>
+    <apm_res><apm>Sample APM Response</apm></apm_res>
+    <dm_req><dm>Sample DM Request</dm></dm_req>
+    <dm_res><dm>Sample DM REsponse</dm></dm_res>
+    <dam_req><dam>Sample DAM Request</dam></dam_req>
+    <dam_res><dam>Sample DAM Response</dam></dam_res>
+</applicantRequest>

@@ -1,0 +1,15 @@
+<SubmitApplicationResponse xmlns="http://www.fico.com">
+   <Decision>
+      <CreditScore>0</CreditScore>
+      <CreditClass>H</CreditClass>
+      <DecisionBureauCode/>
+      <Deposit>999</Deposit>
+      <NumberOfLinesApproved>0</NumberOfLinesApproved>
+      <CreditDecisionCriteria/>
+      <CreditStatusComments>Default Credit Decision</CreditStatusComments>
+      <CreditApplicationStatus>COMPLETE</CreditApplicationStatus>
+   </Decision>
+   <CRID>20180471000019</CRID>
+   <ErrorList/>
+   <PORTFLOW/>
+</SubmitApplicationResponse>
