@@ -54,7 +54,7 @@ pipeline {
 
 		stage('Build Image') {
 			steps {				
-				sh 'docker build -t shaktipp/ReadWriteS3-image:${BUILD_NUMBER} ReadWriteS3/dmp/docker'
+				sh 'docker build -t shaktipp/readwrites3-image:${BUILD_NUMBER} ReadWriteS3/dmp/docker'
 			}
 
 		}
