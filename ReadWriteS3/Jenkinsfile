@@ -61,7 +61,7 @@ pipeline {
 		stage('Push Image') {			
 			steps {
 				withDockerRegistry([credentialsId: 'docker-hub-credential', url: 'https://registry.hub.docker.com']) {
-				  sh 'docker push shaktipp/math-image:${BUILD_NUMBER}'
+				  sh 'docker push shaktipp/readwrites3-image:${BUILD_NUMBER}'
 			        }
 			}
 
